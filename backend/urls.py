@@ -22,6 +22,6 @@ from django.urls import path
 from backend.api.views import get_message
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path("api/", include("api.urls")),
+    path("admin/", admin.site.urls),
+    path("api/message/", get_message),
 ]
